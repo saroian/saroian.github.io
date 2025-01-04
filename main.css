@@ -1,0 +1,67 @@
+html, body {
+    background-color: #0F172A;
+    color: #D0EFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+
+    /*Flexbox*/
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+a {
+    color: #4C9FFF;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+a:visited {
+    /*color:lavender;*/
+    color: #4C9FFF;
+}
+
+a:hover, a:active {
+    /*color:rgb(255, 255, 255);*/
+    color: #91d1ff;
+    transition-duration: 1s;
+    text-shadow: 0 0 8px #008ad4, 0 0 16px #008ad4, 0 0 24px #008ad4;
+}
+
+hr {
+    border: 1px solid #1a2747;
+    width: 100%;
+}
+
+.name {
+    background-image: linear-gradient(to right, #877fff, #71b6ff);
+    background-clip: text;
+    color: transparent;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInFromTop 2s ease-out forwards;
+}
+
+@keyframes fadeInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
